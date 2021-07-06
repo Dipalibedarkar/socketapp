@@ -69,7 +69,7 @@ const ChatRoom = (props) => {
         handleStopTyping={stopTyping}
         handleSendMessage={handleSendMessage}
       ></NewMessageForm>
-      Users
+     
     </div>
   );
 };
