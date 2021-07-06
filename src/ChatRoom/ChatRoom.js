@@ -7,7 +7,7 @@ import useTyping from "../useTyping";
 import NewMessageForm from "../NewMessageForm/NewMessageForm";
 import TypingMessage from "../TypingMessage/TypingMessage";
 import Users from "../Users/Users";
-// import UserAvatar from "../UserAvatar/UserAvatar";
+ import UserAvatar from "../UserAvatar/UserAvatar";
 
 const ChatRoom = (props) => {
   const { roomId } = props.match.params;
@@ -42,9 +42,10 @@ const ChatRoom = (props) => {
 
   return (
     <div className="chat-room-container">
+    
       <div className="chat-room-top-bar">
         <h1 className="room-name">Room: {roomId}</h1>
-        {/* {user && <UserAvatar user={user}></UserAvatar>} */}
+       {user && <UserAvatar user={user}></UserAvatar>} 
       </div>
       <Users users={users}></Users>
       <div className="messages-container">
@@ -68,6 +69,7 @@ const ChatRoom = (props) => {
         handleStopTyping={stopTyping}
         handleSendMessage={handleSendMessage}
       ></NewMessageForm>
+      Users
     </div>
   );
 };

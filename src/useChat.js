@@ -24,7 +24,7 @@ const useChat = (roomId) => {
       const result = response.data.results[0];
       setUser({
         name: result.name.first,
-        // picture: result.picture.thumbnail,
+    picture: result.picture.thumbnail,
       });
     };
 

@@ -1,12 +1,14 @@
 .chat-room-container {
     position: fixed;
-    left: 0;
-    right: 0;
+    left: 550px;
+    right: 650px;
     top: 0;
     bottom: 0;
     display: flex;
     flex-direction: column;
     margin: 16px;
+    background-color: rgb(147, 180, 169);
+    padding: 20px;
   }
   
   .chat-room-top-bar {
